@@ -33,7 +33,7 @@ public final class IndexWriterUtil {
      * 写入单条记录
      * @param indexPath 索引路径
      * @param document 文档记录
-     * @throws IOException
+     * @throws IOException 索引文件写入异常
      */
     public static void insert(String indexPath, Document document) throws IOException {
         IndexWriter indexWriter = null;
@@ -54,7 +54,7 @@ public final class IndexWriterUtil {
      * 写入多条记录
      * @param indexPath 索引路径
      * @param documents 文档记录
-     * @throws IOException
+     * @throws IOException 索引文件写入异常
      */
     public static void insert(String indexPath, List<Document> documents) throws IOException {
         IndexWriter indexWriter = null;
